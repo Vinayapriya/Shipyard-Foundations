@@ -1,6 +1,6 @@
 # CI/CD Assignment Submission
 
-Name: Vinayapriya  
+Name: Vinayapriya
 muid: vinayapriyacc@mulearn
 
 ## 🔗 Repository Link  
