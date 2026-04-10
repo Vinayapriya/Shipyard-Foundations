@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scalable-webapp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: scalable-webapp
+  template:
+    metadata:
+      labels:
+        app: scalable-webapp
+    spec:
+      containers:
+        - name: scalable-webapp
+          image: scalable-webapp:v2
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
+          env:
+            - name: STUDENT_NAME
+              value: "Vinayapriya"

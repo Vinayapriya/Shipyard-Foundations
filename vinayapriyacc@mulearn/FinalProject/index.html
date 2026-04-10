@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Scalable Web App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #222;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+    }
+    h1 {
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    .env {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #198754;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>My First Scalable Web App</h1>
+    <p>This app is containerized with Docker and deployed on Kubernetes using KIND.</p>
+    <p>It is running with multiple replicas.</p>
+    <p class="env">Student: ${STUDENT_NAME}</p>
+  </div>
+</body>
+</html>
+
